@@ -1,6 +1,10 @@
 menuText = document.querySelectorAll(".menu-text");
 Content = document.querySelectorAll(".content");
 
+// window.onload = function(){
+//     crazyoff();
+// }
+
 menuText.forEach( 
     mt=>{mt.addEventListener("click", event=> menuSelect(mt))}
     );
@@ -21,4 +25,18 @@ function menuSelect(mt){
     var cntelem = document.getElementsByClassName(cnt)[0];
     cntelem.classList.add("content-selected");
 
+    
+
 }
+
+
+
+// function crazyoff(){
+    
+//     document.querySelectorAll(".content-row").forEach(
+//      cr =>{
+//          var ran = Math.random();
+//          cr.style.animationDuration = ran+"ms";
+//      }   
+//     )
+// }
