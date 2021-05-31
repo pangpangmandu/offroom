@@ -1,9 +1,8 @@
 menuText = document.querySelectorAll(".menu-text");
-Content = document.querySelectorAll(".content");
+Content = document.querySelectorAll(".content-row");
 
-// window.onload = function(){
-//     crazyoff();
-// }
+
+console.log(Content);
 
 menuText.forEach( 
     mt=>{mt.addEventListener("click", event=> menuSelect(mt))}
@@ -16,27 +15,36 @@ function menuSelect(mt){
         mt2=>{
             mt2.classList.remove("menu-selected");
             var cnt = String(mt2.innerHTML);
-            var cntelem = document.getElementsByClassName(cnt)[0];
-            cntelem.classList.remove("content-selected");
+            Content.forEach(
+                cl=>{
+                    cl.classList.remove("content-selected");
+                }
+            )
+            
         }
     )
+    
+    menuSelect2(mt);
+
+}
+
+function menuSelect2(mt){
     mt.classList.add("menu-selected");
     var cnt =String(mt.innerHTML);
-    var cntelem = document.getElementsByClassName(cnt)[0];
-    cntelem.classList.add("content-selected");
+    console.log(cnt);
+    var cntelem = document.querySelectorAll("."+cnt);
+    var cntelem2 = document.getElementsByClassName(cnt);
+    console.log(cntelem);
+    // cntelem.forEach(
+    //     cl =>{
+    //         cl.classList.add("content-selected")
+    //     }
+    // )
 
-    
+    for(var i =0; i<cntelem2.length; i++){
+        cntelem2[i].classList.add("content-selected")
+    }
 
 }
 
 
-
-// function crazyoff(){
-    
-//     document.querySelectorAll(".content-row").forEach(
-//      cr =>{
-//          var ran = Math.random();
-//          cr.style.animationDuration = ran+"ms";
-//      }   
-//     )
-// }
