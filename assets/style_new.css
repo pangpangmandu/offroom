@@ -144,14 +144,14 @@ a:active { color: black; background-color: none; }
         background: red;
     }
     #menu{
-        font-size: 6vw;
+        font-size: 7vw;
         width: 100%;
         color: white;
         display: flex;
         flex-direction: column;
         position: fixed;
         z-index: 2;
-        top: 3vh;
+        top: 4vh;
         justify-content: space-around;
         height: 10vh;
     
