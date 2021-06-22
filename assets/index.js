@@ -17,7 +17,7 @@ function menuSelect(mt){
             var cnt = String(mt2.innerHTML);
             Content.forEach(
                 cl=>{
-                    cl.classList.remove("content-selected");
+                    cl.classList.add("hidden");
                 }
             )
             
@@ -35,14 +35,10 @@ function menuSelect2(mt){
     var cntelem = document.querySelectorAll("."+cnt);
     var cntelem2 = document.getElementsByClassName(cnt);
     console.log(cntelem);
-    // cntelem.forEach(
-    //     cl =>{
-    //         cl.classList.add("content-selected")
-    //     }
-    // )
 
     for(var i =0; i<cntelem2.length; i++){
         cntelem2[i].classList.add("content-selected")
+        cntelem2[i].classList.remove("hidden");
     }
 
 }

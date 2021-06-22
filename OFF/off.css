@@ -2,20 +2,22 @@ body{
     font-size: 16px;
     margin: 0%;
     width: 100vw;
+    text-align: center;
+    font-size: 2vw;
 }
 ::-webkit-scrollbar { display: none; }
 
 
 
 #menu{
-    font-size: 50px;
+    font-size: 50px !important;
     width: 100%;
     color: white;
     display: flex;
     flex-direction: row;
     position: fixed;
     z-index: 2;
-    top: 2vh;
+    top: 0.1vh;
     justify-content: space-around;
     font-weight: bolder;
 
