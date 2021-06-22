@@ -138,27 +138,26 @@ a:active { color: black; background-color: none; }
     text-align: center;
 }
 
-@media (max-width:400px){
+@media (max-width:800px){
 
     body{
         background: red;
     }
     #menu{
-        font-size: 7vw;
+        font-size: 6vw;
         width: 100%;
         color: white;
         display: flex;
         flex-direction: column;
         position: fixed;
         z-index: 2;
-        top: 4vh;
         justify-content: space-around;
-        height: 10vh;
+        height: 14vh;
     
     }
 
     .header{
-        height: 40vw;
+        height: 20vh;
     }
 
     #off{
@@ -166,13 +165,13 @@ a:active { color: black; background-color: none; }
         right: 1vw;
     }
     #wrapper{
-        top: 40vw;
+        top: 20vh;
     }
 
     .content-row{
         font-size: 4vw !important;
         line-height: 6vw !important;
-        height: 15vh !important;
+        height: 20vh !important;
     }
 
     .lecture_date{

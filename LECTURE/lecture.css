@@ -84,3 +84,29 @@ a:active { color: black; background-color: none;   cursor: pointer;}
         top: 20vh;
     }
 }
+
+
+@media (max-width:500px){
+    .header{
+        width: 100vw;
+        height: 5vh;
+        top: 0%;
+    }
+
+    .wrapper{
+        font-size: 4vw;
+        overflow: hidden;
+    }
+
+    .page_content{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+
+    #menu{
+        top: 0vh;
+        height: 0.5vh;
+        font-size: 4vh;
+    }
+}
